@@ -348,10 +348,14 @@ body::after {
       <div class="footer-rule-line"></div>
     </div>
     <div class="footer-text">
-      Data source: <span>Box Office Mojo</span> · Updated <span>May 8, 2026</span>
+      Data source: <span>Box Office Mojo</span> · Updated <span id="last-updated"></span>
     </div>
   </div>
 
 </div>
+<script src="data.js"></script>
+<script>
+  document.getElementById('last-updated').textContent = LAST_UPDATED;
+</script>
 </body>
 </html>
