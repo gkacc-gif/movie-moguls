@@ -19,14 +19,14 @@
 // ============================================================
 
 const EARNINGS = {
-  "the devil wears prada 2": 446262196,   // Last seen: May 16
-  "mortal kombat 2":          79132532,   // Last seen: May 16
-  "the sheep detectives":     32285522,   // Last seen: May 16
-  "hokum":                    18442719,   // Last seen: May 16
-  "animal farm":               5426539    // Last seen: May 16
+  "the devil wears prada 2": 552255658,   // Last seen: May 22
+  "mortal kombat 2":         108032933,   // Last seen: May 22
+  "the sheep detectives":     63154101,   // Last seen: May 22
+  "hokum":                    21124333,   // Last seen: May 22
+  "animal farm":               5655009    // Last seen: May 22
   // Add new entries here as films release, e.g.:
   // "toy story 5": 480000000,
   // "the mandalorian & grogu": 520000000,
 };
-
-const LAST_UPDATED = "May 16, 2026";
+ 
+const LAST_UPDATED = "May 22, 2026";
