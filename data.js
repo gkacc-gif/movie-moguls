@@ -23,6 +23,7 @@ const EARNINGS = {
   "the mandalorian & grogu":  297271900,   // Last seen: Jun 12
   "backrooms":                220638624,   // Last seen: Jun 12
   "scary movie":              121969488,   // Last seen: Jun 12
+  "scary movie 5":            121969488,   // Same film as scary movie — alias for Cinema Toast Crunch
   "mortal kombat 2":          128190032,   // Last seen: Jun 12
   "the sheep detectives":     115953209,   // Last seen: Jun 12
   "masters of the universe":   61613511,   // Last seen: Jun 12
