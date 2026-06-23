@@ -19,19 +19,20 @@
 // ============================================================
 
 const EARNINGS = {
-  "the devil wears prada 2":  677407223,   // Last seen: Jun 19
-  "the mandalorian & grogu":  322039029,   // Last seen: Jun 19
-  "toy story 5":              311677837,   // Last seen: Jun 19
-  "backrooms":                273531857,   // Last seen: Jun 19
-  "scary movie":              201649724,   // Last seen: Jun 19
+  "the devil wears prada 2":  677407223,   // Last seen: Jun 23
+  "the mandalorian & grogu":  322039029,   // Last seen: Jun 23
+  "toy story 5":              311677837,   // Last seen: Jun 23
+  "toy story":                311677837,   // Same film — BOM lists as "Toy Story"
+  "backrooms":                273531857,   // Last seen: Jun 23
+  "scary movie":              201649724,   // Last seen: Jun 23
   "scary movie 5":            201649724,   // Same film as scary movie — alias for Cinema Toast Crunch
-  "disclosure day":           160858640,   // Last seen: Jun 19
-  "mortal kombat 2":          129154140,   // Last seen: Jun 19
-  "the sheep detectives":     126208518,   // Last seen: Jun 19
-  "masters of the universe":  102489787,   // Last seen: Jun 19
-  "hokum":                     24068628,   // Last seen: Jun 19
-  "animal farm":                6206841,   // Last seen: Jun 19
-  "power ballad":               3251256    // Last seen: Jun 19
+  "disclosure day":           160858640,   // Last seen: Jun 23
+  "mortal kombat 2":          129154140,   // Last seen: Jun 23
+  "the sheep detectives":     126208518,   // Last seen: Jun 23
+  "masters of the universe":  102489787,   // Last seen: Jun 23
+  "hokum":                     24068628,   // Last seen: Jun 23
+  "animal farm":                6206841,   // Last seen: Jun 23
+  "power ballad":               3251256    // Last seen: Jun 23
   // Add new entries here as films release, e.g.:
   // "supergirl": 0,
   // "moana": 0,
