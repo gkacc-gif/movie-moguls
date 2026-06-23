@@ -19,19 +19,22 @@
 // ============================================================
 
 const EARNINGS = {
-  "the devil wears prada 2":  664822425,   // Last seen: Jun 12
-  "the mandalorian & grogu":  297271900,   // Last seen: Jun 12
-  "backrooms":                220638624,   // Last seen: Jun 12
-  "scary movie":              121969488,   // Last seen: Jun 12
-  "scary movie 5":            121969488,   // Same film as scary movie — alias for Cinema Toast Crunch
-  "mortal kombat 2":          128190032,   // Last seen: Jun 12
-  "the sheep detectives":     115953209,   // Last seen: Jun 12
-  "masters of the universe":   61613511,   // Last seen: Jun 12
-  "hokum":                     23940823,   // Last seen: Jun 12
-  "animal farm":                6099901    // Last seen: Jun 12
+  "the devil wears prada 2":  677407223,   // Last seen: Jun 19
+  "the mandalorian & grogu":  322039029,   // Last seen: Jun 19
+  "toy story 5":              311677837,   // Last seen: Jun 19
+  "backrooms":                273531857,   // Last seen: Jun 19
+  "scary movie":              201649724,   // Last seen: Jun 19
+  "scary movie 5":            201649724,   // Same film as scary movie — alias for Cinema Toast Crunch
+  "disclosure day":           160858640,   // Last seen: Jun 19
+  "mortal kombat 2":          129154140,   // Last seen: Jun 19
+  "the sheep detectives":     126208518,   // Last seen: Jun 19
+  "masters of the universe":  102489787,   // Last seen: Jun 19
+  "hokum":                     24068628,   // Last seen: Jun 19
+  "animal farm":                6206841,   // Last seen: Jun 19
+  "power ballad":               3251256    // Last seen: Jun 19
   // Add new entries here as films release, e.g.:
-  // "toy story 5": 0,
   // "supergirl": 0,
+  // "moana": 0,
 };
  
-const LAST_UPDATED = "Jun 12, 2026";
+const LAST_UPDATED = "Jun 23, 2026";
