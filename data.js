@@ -19,25 +19,25 @@
 // ============================================================
 
 const EARNINGS = {
-  "the devil wears prada 2":  678043803,   // Last seen: Jun 29
-  "toy story 5":              585041642,   // Last seen: Jun 29
-  "toy story":                585041642,   // Same film — BOM lists as "Toy Story"
-  "backrooms":                330098049,   // Last seen: Jun 29
-  "the mandalorian & grogu":  325253370,   // Last seen: Jun 29
-  "scary movie":              215323756,   // Last seen: Jun 29
-  "scary movie 5":            215323756,   // Same film as scary movie — alias for Cinema Toast Crunch
-  "disclosure day":           193668140,   // Last seen: Jun 29
-  "the sheep detectives":     126497429,   // Last seen: Jun 29
-  "mortal kombat 2":          129285378,   // Last seen: Jun 29
-  "masters of the universe":  109335163,   // Last seen: Jun 29
-  "supergirl":                 68000000,   // Last seen: Jun 29
-  "minions & monsters":        10349000,   // Last seen: Jun 29
-  "hokum":                     24068628,   // Last seen: Jun 23 (no change)
-  "animal farm":                6217058,   // Last seen: Jun 29
-  "power ballad":               3270938    // Last seen: Jun 29
+  "toy story 5":              764348690,   // Last seen: Jul 6
+  "toy story":                764348690,   // Same film — BOM lists as "Toy Story"
+  "the devil wears prada 2":  678382322,   // Last seen: Jul 6
+  "backrooms":                349792472,   // Last seen: Jul 6
+  "the mandalorian & grogu":  329028400,   // Last seen: Jul 6
+  "scary movie":              223702451,   // Last seen: Jul 6
+  "scary movie 5":            223702451,   // Same film as scary movie — alias for Cinema Toast Crunch
+  "disclosure day":           216557885,   // Last seen: Jul 6
+  "minions & monsters":       159870395,   // Last seen: Jul 6
+  "the sheep detectives":     128530387,   // Last seen: Jul 6
+  "mortal kombat 2":          129419161,   // Last seen: Jul 6
+  "masters of the universe":  110540345,   // Last seen: Jul 6
+  "supergirl":                100500000,   // Last seen: Jul 6
+  "hokum":                     24068628,   // Last seen: Jun 29 (off chart — preserved)
+  "animal farm":                6217058,   // Last seen: Jun 29 (no change)
+  "power ballad":               3270938    // Last seen: Jun 29 (off chart — preserved)
   // Add new entries here as films release, e.g.:
   // "the odyssey": 0,
   // "moana": 0,
 };
  
-const LAST_UPDATED = "Jun 29, 2026";
+const LAST_UPDATED = "Jul 6, 2026";
