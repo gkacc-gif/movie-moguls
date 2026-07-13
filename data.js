@@ -34,9 +34,9 @@ const EARNINGS = {
   "masters of the universe":  112580092,   // Last seen: Jul 13
   "moana":                     95000000,   // Last seen: Jul 13
   "evil dead: burn":           40700000,   // Last seen: Jul 13
-  "hokum":                     24068628,   // Last seen: Jun 29 (off chart — preserved)
+  "hokum":                     24063412,   // Last seen: Jun 29 (off chart — preserved)
   "animal farm":                6259778,   // Last seen: Jul 13
-  "power ballad":               3270938    // Last seen: Jun 29 (off chart — preserved)
+  "power ballad":               3324456    // Last seen: Jun 29 (off chart — preserved)
   // Add new entries here as films release, e.g.:
   // "the odyssey": 0,
   // "spider-man: brand new day": 0,
