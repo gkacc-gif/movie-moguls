@@ -19,28 +19,28 @@
 // ============================================================
 
 const EARNINGS = {
-  "toy story 5":              879072720,   // Last seen: Jul 13
-  "toy story":                879072720,   // Same film — BOM lists as "Toy Story"
-  "the devil wears prada 2":  688171934,   // Last seen: Jul 13
-  "backrooms":                363328808,   // Last seen: Jul 13
-  "the mandalorian & grogu":  340470989,   // Last seen: Jul 13
-  "minions & monsters":       280034335,   // Last seen: Jul 13
-  "scary movie":              228193031,   // Last seen: Jul 13
-  "scary movie 5":            228193031,   // Same film as scary movie — alias for Cinema Toast Crunch
-  "disclosure day":           228994915,   // Last seen: Jul 13
-  "the sheep detectives":     129767635,   // Last seen: Jul 13
-  "mortal kombat 2":          129455207,   // Last seen: Jul 13
-  "supergirl":                115401114,   // Last seen: Jul 13
-  "masters of the universe":  112580092,   // Last seen: Jul 13
-  "moana":                     95000000,   // Last seen: Jul 13
-  "evil dead: burn":           40700000,   // Last seen: Jul 13
-  "hokum":                     24063412,   // Last seen: Jun 29 (off chart — preserved)
-  "animal farm":                6259778,   // Last seen: Jul 13
-  "power ballad":               3324456    // Last seen: Jun 29 (off chart — preserved)
+  "toy story 5":              957537644,   // Last seen: Jul 21
+  "toy story":                957537644,   // Same film — BOM lists as "Toy Story"
+  "the devil wears prada 2":  690275339,   // Last seen: Jul 21
+  "backrooms":                384382240,   // Last seen: Jul 21
+  "minions & monsters":       358447700,   // Last seen: Jul 21
+  "the mandalorian & grogu":  344818222,   // Last seen: Jul 21
+  "the odyssey":              263799900,   // Last seen: Jul 21
+  "disclosure day":           234615711,   // Last seen: Jul 21
+  "scary movie":              230077799,   // Last seen: Jul 21
+  "scary movie 5":            230077799,   // Same film as scary movie — alias for Cinema Toast Crunch
+  "moana":                    177331028,   // Last seen: Jul 21
+  "the sheep detectives":     130574611,   // Last seen: Jul 21
+  "mortal kombat 2":          129470110,   // Last seen: Jul 21
+  "supergirl":                120807906,   // Last seen: Jul 21
+  "masters of the universe":  113474410,   // Last seen: Jul 21
+  "evil dead: burn":           51084445,   // Last seen: Jul 21
+  "hokum":                     24071317,   // Last seen: Jul 21
+  "animal farm":                6259778,   // Last seen: Jun 29 (no change)
+  "power ballad":               3338777    // Last seen: Jul 21 (off chart — updated)
   // Add new entries here as films release, e.g.:
-  // "the odyssey": 0,
   // "spider-man: brand new day": 0,
+  // "paw patrol": 0,
 };
- 
-const LAST_UPDATED = "Jul 13, 2026";
- 
+
+const LAST_UPDATED = "Jul 21, 2026";
