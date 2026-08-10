@@ -19,29 +19,30 @@
 // ============================================================
 
 const EARNINGS = {
-  "spider-man":              1155469617,   // Spider-Man: Brand New Day — dropped this week
-  "toy story 5":              1069518777,   // Last seen: Aug 6 — crossed $1B
-  "toy story":                1069518777,   // Same film — BOM lists as "Toy Story"
-  "the odyssey":               930896155,   // Last seen: Aug 6 — massive jump
-  "the devil wears prada 2":   691379651,   // Last seen: Aug 6
-  "minions & monsters":        451746275,   // Last seen: Aug 6
-  "backrooms":                 394981001,   // Last seen: Aug 6
-  "the mandalorian & grogu":   345166617,   // Last seen: Aug 6
-  "moana":                     263832434,   // Last seen: Aug 6
-  "disclosure day":            240659748,   // Last seen: Aug 6
-  "scary movie":               231467451,   // Last seen: Aug 6
-  "scary movie 5":             231467451,   // Same film as scary movie — alias for Cinema Toast Crunch
-  "the sheep detectives":      131550648,   // Last seen: Aug 6
-  "mortal kombat 2":           129470110,   // Last seen: Aug 6 (no change)
-  "supergirl":                 125901095,   // Last seen: Aug 6
-  "masters of the universe":   113763426,   // Last seen: Aug 6
-  "evil dead: burn":            66692700,   // Last seen: Aug 6 (BOM lists as "Evil Dead Burn")
-  "hokum":                      24117049,   // Last seen: Aug 6
-  "animal farm":                 6390950,   // Last seen: Aug 6
-  "power ballad":                3384158    // Last seen: Aug 6 (off chart — updated manually)
+  "spider-man":               1665088528,  // Last seen: Aug 10 (BOM: "Spider-Man: Brand New Day")
+  "the odyssey":              1104804890,  // Last seen: Aug 10
+  "toy story 5":              1093981614,  // Last seen: Aug 10
+  "toy story":                1093981614,  // Same film — BOM lists as "Toy Story"
+  "the devil wears prada 2":   691379651,  // Last seen: Aug 10
+  "minions & monsters":        473539045,  // Last seen: Aug 10
+  "backrooms":                 395180370,  // Last seen: Aug 10
+  "the mandalorian & grogu":   345168060,  // Last seen: Aug 10 (BOM: "Star Wars: The Mandalorian and Grogu")
+  "moana":                     280441267,  // Last seen: Aug 10
+  "disclosure day":            240689748,  // Last seen: Aug 10
+  "scary movie":               231467451,  // Last seen: Aug 10
+  "scary movie 5":             231467451,  // Same film as scary movie — alias for Cinema Toast Crunch
+  "the sheep detectives":      131880924,  // Last seen: Aug 10
+  "mortal kombat 2":           129470110,  // Last seen: Aug 10 (BOM: "Mortal Kombat II")
+  "supergirl":                 126118944,  // Last seen: Aug 10
+  "masters of the universe":   113775940,  // Last seen: Aug 10
+  "evil dead: burn":            61626028,  // Last seen: Aug 10 (BOM: "Evil Dead Burn")
+  "paw patrol":                 25000000,  // Last seen: Aug 10 (BOM: "PAW Patrol: The Dino Movie" — early debut)
+  "hokum":                      24117049,  // Last seen: Aug 10
+  "animal farm":                 6390950,  // Last seen: Aug 10
+  "power ballad":                3338777   // Last seen: Jul 21 (off chart — held)
   // Add new entries here as films release, e.g.:
-  // "paw patrol": 0,
   // "coyote v. acme": 0,
+  // "end of oak street": 0,
 };
  
-const LAST_UPDATED = "Aug 6, 2026";
+const LAST_UPDATED = "Aug 10, 2026";
