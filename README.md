@@ -12,8 +12,8 @@ Welcome to the **Movie Moguls**, a realm of whimsy, fun and ruthless competition
 
 ## 🎥 The Studios
 
-- 🎬 **[Tinseltown Studio](tinseltown_moguls.html)** — Reel Ones · Studio Cinemagda · Cash Me If You Can · The Devil Wears Victory
-- 🎥 **[Hollywood Movie Studio](hollywood_moguls.html)** — Cinema Toast Crunch · Take 2 Studios · Butter Popcorn Prophets · Cinemaniacs
+- 🎬 **[Tinseltown Studio](https://gkacc-gif.github.io/movie-moguls/tinseltown_moguls.html)** — Reel Ones · Studio Cinemagda · Cash Me If You Can · The Devil Wears Victory
+- 🎥 **[Hollywood Movie Studio](https://gkacc-gif.github.io/movie-moguls/hollywood_moguls.html)** — Cinema Toast Crunch · Take 2 Studios · Butter Popcorn Prophets · Cinemaniacs
 
 ## 📊 The Season
 
