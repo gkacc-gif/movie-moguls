@@ -19,30 +19,37 @@
 // ============================================================
 
 const EARNINGS = {
-  "toy story 5":              1144467589,  // Last seen: Sep 15
-  "toy story":                1144467589,  // Same film — BOM lists as "Toy Story"
-  "the devil wears prada 2":   693121651,  // Last seen: Sep 15
-  "backrooms":                 394122453,  // Last seen: Sep 15
-  "minions & monsters":        519033384,  // Last seen: Sep 15
-  "the mandalorian & grogu":   345562060,  // Last seen: Sep 15
-  "the odyssey":              1685556025,  // Last seen: Sep 15
-  "disclosure day":            241288350,  // Last seen: Sep 15
-  "scary movie":               231886052,  // Last seen: Sep 15
-  "scary movie 5":             231886052,  // Same film as scary movie — alias for Cinema Toast Crunch
-  "moana":                     321929887,  // Last seen: Sep 15
-  "the sheep detectives":      133065980,  // Last seen: Sep 15
-  "mortal kombat 2":           129470110,  // Last seen: Sep 15
-  "supergirl":                 126366532,  // Last seen: Sep 15
-  "masters of the universe":   113791362,  // Last seen: Sep 15
-  "evil dead: burn":            72361568,  // Last seen: Sep 15
-  "hokum":                      25023390,  // Last seen: Sep 15
-  "animal farm":                 6554447,  // Last seen: Sep 15
-  "power ballad":                3338777,  // Last seen: Jul 21 (off chart — kept)
-  "spider-man":               2451432584,  // Spider-Man: Brand New Day — released, Last seen: Sep 15
-  "paw patrol":                146503529,  // PAW Patrol: The Dino Movie — released, Last seen: Sep 15
-  "practical magic 2":          46002526,  // Released, Last seen: Sep 15
-  "coyote v. acme":             65002915,  // Coyote vs. Acme — released, Last seen: Sep 15
-  "end of oak street":         118381105   // The End of Oak Street — released, Last seen: Sep 15
+  "spider-man":                        2496384465,   // Final: Sep 30
+  "spider-man: brand new day":         2496384465,   // Same film — BOM lists full title
+  "the odyssey":                       1752803340,   // Final: Sep 30
+  "toy story 5":                       1147460805,   // Final: Sep 30
+  "toy story":                         1147460805,   // Same film — BOM lists as "Toy Story"
+  "the devil wears prada 2":            693205651,   // Final: Sep 30
+  "minions & monsters":                 523559980,   // Final: Sep 30
+  "backrooms":                          400685080,   // Final: Sep 30
+  "the mandalorian & grogu":            345602060,   // Final: Sep 30
+  "star wars: the mandalorian and grogu": 345602060, // Same film — BOM lists full title
+  "moana":                              323447663,   // Final: Sep 30
+  "disclosure day":                     241492397,   // Final: Sep 30
+  "scary movie":                        231886052,   // Final: Sep 30
+  "scary movie 5":                      231886052,   // Same film as scary movie — alias for Cinema Toast Crunch
+  "resident evil":                      202298709,   // Final: Sep 30
+  "paw patrol":                         154931093,   // Final: Sep 30
+  "paw patrol: the dino movie":         154931093,   // Same film — BOM lists full title
+  "the sheep detectives":               133125236,   // Final: Sep 30
+  "mortal kombat 2":                    129570110,   // Final: Sep 30
+  "supergirl":                          126466532,   // Final: Sep 30
+  "end of oak street":                  121181510,   // Final: Sep 30
+  "the end of oak street":              121181510,   // Same film — BOM lists with "The"
+  "masters of the universe":            113792300,   // Final: Sep 30
+  "coyote v. acme":                      93809809,   // Final: Sep 30
+  "coyote vs. acme":                     93809809,   // Same film — BOM lists with "vs."
+  "practical magic 2":                   93610456,   // Final: Sep 30
+  "evil dead: burn":                     72373081,   // Final: Sep 30
+  "evil dead burn":                      72373081,   // Same film — BOM lists without colon
+  "hokum":                               25023390,   // Final: Sep 30
+  "animal farm":                          6603826,   // Final: Sep 30
+  "power ballad":                         3338777    // Last seen: Jul 21 (off chart — carried forward)
 };
  
-const LAST_UPDATED = "Sep 15, 2026";
+const LAST_UPDATED = "Oct 1, 2026";
