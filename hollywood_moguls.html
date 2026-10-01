@@ -24,6 +24,13 @@ body{background:var(--surface);color:var(--text);font-family:-apple-system,Blink
 .source-text{font-size:10px;color:var(--muted);letter-spacing:1px;font-family:'Arial Narrow',Arial,sans-serif}
 .back-link{display:inline-flex;align-items:center;gap:6px;font-family:'Arial Narrow',Arial,sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--muted);text-decoration:none;margin-bottom:16px;transition:color .2s}
 .back-link:hover{color:var(--crimson)}
+.champion-banner{background:linear-gradient(135deg,rgba(192,21,42,0.15),rgba(192,21,42,0.03));border:1px solid var(--crimson);padding:22px 26px;margin-bottom:24px;position:relative;overflow:hidden;text-align:center}
+.champion-banner::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--crimson-dark),var(--crimson),var(--crimson-dark))}
+.champ-eyebrow{font-family:'Arial Narrow',Impact,Arial,sans-serif;font-size:11px;font-weight:700;letter-spacing:5px;text-transform:uppercase;color:var(--crimson);margin-bottom:8px}
+.champ-label{font-family:'Arial Narrow',Impact,Arial,sans-serif;font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+.champ-name{font-family:'Arial Narrow',Impact,Arial,sans-serif;font-size:clamp(28px,5vw,42px);font-weight:900;font-style:italic;color:var(--white);text-transform:uppercase;line-height:1;margin-bottom:10px;letter-spacing:-1px}
+.champ-figure{font-family:Impact,'Arial Narrow',Arial,sans-serif;font-size:clamp(24px,4vw,32px);font-weight:700;color:var(--crimson);letter-spacing:1px}
+.champ-subtext{font-family:'Arial Narrow',Arial,sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--muted);margin-top:10px}
 .tabs{display:flex;gap:2px;margin-bottom:24px;background:#0a0806;padding:3px;border-radius:2px}
 .tab{flex:1;padding:10px 12px;background:none;border:none;color:var(--muted);font-family:'Arial Narrow',Impact,Arial,sans-serif;font-size:13px;font-weight:700;letter-spacing:3px;text-transform:uppercase;cursor:pointer;transition:all .15s;border-radius:1px}
 .tab:hover{color:var(--text)}.tab.active{background:var(--crimson);color:var(--white)}
