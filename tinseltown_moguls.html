@@ -23,6 +23,15 @@ body::before{content:'';position:fixed;inset:0;background-image:repeating-linear
 .subtitle{font-family:Garamond,Georgia,serif;font-size:15px;color:var(--muted);letter-spacing:3px;text-transform:uppercase;margin-top:12px}
 .data-badge{display:flex;align-items:center;justify-content:center;gap:8px;margin:0 auto 28px;font-size:11px;color:var(--gold-dim);letter-spacing:1px;font-weight:300}
 .data-badge::before,.data-badge::after{content:'◆';font-size:7px}
+.champion-banner{background:linear-gradient(135deg,rgba(201,168,76,0.12),rgba(201,168,76,0.04));border:1px solid var(--gold);border-radius:2px;padding:24px 28px;margin-bottom:28px;position:relative;overflow:hidden;text-align:center}
+.champion-banner::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold-light),var(--gold),var(--gold-light),transparent)}
+.champion-banner::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--gold-dim),transparent)}
+.champ-eyebrow{font-size:10px;letter-spacing:6px;text-transform:uppercase;color:var(--gold-dim);margin-bottom:8px}
+.champ-eyebrow::before,.champ-eyebrow::after{content:'◆';color:var(--gold);margin:0 10px;font-size:8px;vertical-align:middle}
+.champ-label{font-family:Georgia,'Times New Roman',serif;font-size:12px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);font-style:italic;margin-bottom:10px}
+.champ-name{font-family:Georgia,'Times New Roman',serif;font-size:clamp(26px,4.5vw,38px);font-weight:900;font-style:italic;color:var(--text);line-height:1;margin-bottom:12px}
+.champ-figure{font-family:Georgia,'Times New Roman',serif;font-size:clamp(20px,3vw,26px);font-weight:700;color:var(--gold);letter-spacing:1px}
+.champ-subtext{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--muted);margin-top:10px;font-style:italic}
 .tabs{display:flex;border-bottom:1px solid var(--border-gold);margin-bottom:28px}
 .tab{flex:1;padding:11px 8px;background:none;border:none;color:var(--muted);font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase;cursor:pointer;transition:all .2s;position:relative}
 .tab::after{content:'';position:absolute;bottom:-1px;left:50%;right:50%;height:2px;background:var(--gold);transition:all .3s}
