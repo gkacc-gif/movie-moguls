@@ -54,11 +54,13 @@ body::after{content:'';position:fixed;inset:0;background-image:linear-gradient(v
 .film-slot-anchor{border-color:var(--crimson)}
 .film-slot-family{border-color:#3A9A58}
 .film-slot-wildcard{border-color:var(--gold-dim)}
+.film-slot-pick{border-color:var(--gold-dim)}
 .film-info{min-width:0;flex:1}
 .film-slot-label{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;font-size:8px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:3px;display:block}
 .film-slot-anchor .film-slot-label{color:var(--crimson-light)}
 .film-slot-family .film-slot-label{color:#5BC77B}
 .film-slot-wildcard .film-slot-label{color:var(--gold)}
+.film-slot-pick .film-slot-label{color:var(--gold)}
 .film-title{font-family:Georgia,serif;font-size:14px;font-style:italic;color:var(--text);line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .film-title.tbd{color:var(--muted);font-style:italic}
 .film-earn{font-family:Georgia,serif;font-size:14px;font-weight:700;white-space:nowrap}
@@ -136,11 +138,11 @@ body::after{content:'';position:fixed;inset:0;background-image:linear-gradient(v
 
   <div class="section-title">Championship Rules</div>
   <div class="rules-grid">
-    <div class="rule-card">
-      <span class="rule-icon">🎬</span>
-      <div class="rule-title">The Draft</div>
-      <div class="rule-text">Each team drafts <strong>3 films</strong>: one <strong>Anchor</strong>, one <strong>Family/Animated</strong> (G or PG), and one <strong>Wildcard</strong>.</div>
-    </div>
+   <div class="rule-card">
+  <span class="rule-icon">🎬</span>
+  <div class="rule-title">The Draft</div>
+  <div class="rule-text">Each team drafts <strong>3 films</strong> — no category restrictions. Pick whatever you think will win.</div>
+</div>
     <div class="rule-card">
       <span class="rule-icon">📅</span>
       <div class="rule-title">Eligibility</div>
@@ -177,21 +179,21 @@ const CHAMP = [
   {
     name: "Cinema Toast Crunch",
     studio: "Hollywood Movie Studio",
-    side: "left", // crimson
+    side: "left",
     films: [
-      { slot: "anchor",   t: "" },
-      { slot: "family",   t: "" },
-      { slot: "wildcard", t: "" }
+      { slot: "pick", t: "" },
+      { slot: "pick", t: "" },
+      { slot: "pick", t: "" }
     ]
   },
   {
     name: "Studio Cinemagda",
     studio: "Tinseltown Studio",
-    side: "right", // gold
+    side: "right",
     films: [
-      { slot: "anchor",   t: "" },
-      { slot: "family",   t: "" },
-      { slot: "wildcard", t: "" }
+      { slot: "pick", t: "" },
+      { slot: "pick", t: "" },
+      { slot: "pick", t: "" }
     ]
   }
 ];
