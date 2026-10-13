@@ -5,11 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Championship Round — Movie Moguls 2026</title>
 <style>
-:root{--black:#070707;--gold:#C9A84C;--gold-light:#E8C97A;--gold-dim:#7A6330;--crimson:#C0152A;--crimson-light:#FF6B6B;--crimson-dark:#7A0D1A;--text:#F0EAD6;--muted:#5A5040;--card:#141414;--border:#2A2318}
+:root{--black:#070707;--gold:#C9A84C;--gold-light:#E8C97A;--gold-dim:#7A6330;--crimson:#C0152A;--crimson-light:#FF6B6B;--crimson-dark:#7A0D1A;--text:#F0EAD6;--muted:#5A5040;--card:#141414;--border:#2A2318;--grid-line:rgba(201,168,76,0.03);--vs-bg:var(--black);--film-slot-bg:rgba(0,0,0,0.3)}
+:root[data-theme="light"]{--black:#FBF7EC;--gold:#8B6F1F;--gold-light:#B8902E;--gold-dim:#C9A84C;--crimson:#A01020;--crimson-light:#C0152A;--crimson-dark:#7A0D1A;--text:#2A1F0E;--muted:#8B7A5C;--card:#F3EBD5;--border:#D9CDA8;--grid-line:rgba(139,111,31,0.05);--vs-bg:#FBF7EC;--film-slot-bg:rgba(255,255,255,0.5)}
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:var(--black);color:var(--text);font-family:Georgia,'Times New Roman',serif;min-height:100vh;overflow-x:hidden;position:relative}
 body::before{content:'';position:fixed;inset:0;background:linear-gradient(135deg,rgba(201,168,76,0.06) 0%,transparent 45%,transparent 55%,rgba(192,21,42,0.06) 100%);pointer-events:none;z-index:0}
-body::after{content:'';position:fixed;inset:0;background-image:linear-gradient(rgba(201,168,76,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(201,168,76,0.03) 1px,transparent 1px);background-size:60px 60px;pointer-events:none;z-index:0}
+body::after{content:'';position:fixed;inset:0;background-image:linear-gradient(var(--grid-line) 1px,transparent 1px),linear-gradient(90deg,rgba(201,168,76,0.03) 1px,transparent 1px);background-size:60px 60px;pointer-events:none;z-index:0}
 .app{position:relative;z-index:1;max-width:980px;margin:0 auto;padding:0 24px 60px}
 .back-link{display:inline-flex;align-items:center;gap:6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--muted);text-decoration:none;margin:24px 0 0;transition:color .2s}
 .back-link:hover{color:var(--gold)}
@@ -49,7 +50,7 @@ body::after{content:'';position:fixed;inset:0;background-image:linear-gradient(r
 .finalist-right .finalist-total{color:var(--gold-light)}
 .finalist-sub{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;font-size:10px;letter-spacing:2px;color:var(--muted);text-transform:uppercase;margin-bottom:22px}
 .finalist-films{display:flex;flex-direction:column;gap:8px}
-.film-slot{background:rgba(0,0,0,0.3);border-left:3px solid;padding:10px 14px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.film-slot{background:var(--film-slot-bg);border-left:3px solid;padding:10px 14px;display:flex;justify-content:space-between;align-items:center;gap:12px}
 .film-slot-anchor{border-color:var(--crimson)}
 .film-slot-family{border-color:#3A9A58}
 .film-slot-wildcard{border-color:var(--gold-dim)}
@@ -65,7 +66,7 @@ body::after{content:'';position:fixed;inset:0;background-image:linear-gradient(r
 .earn-pending{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;font-size:9px;letter-spacing:1px;color:var(--muted);text-transform:uppercase;font-weight:400;font-style:normal}
 
 .vs{display:flex;align-items:center;justify-content:center;position:relative;background:var(--black)}
-.vs-inner{font-family:Georgia,serif;font-size:28px;font-weight:900;font-style:italic;color:var(--text);background:var(--black);width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;border:1px solid var(--border);position:relative;z-index:2}
+.vs-inner{font-family:Georgia,serif;font-size:28px;font-weight:900;font-style:italic;color:var(--text);background:var(--vs-bg);width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;border:1px solid var(--border);position:relative;z-index:2}
 .vs::before{content:'';position:absolute;top:0;bottom:0;left:50%;width:1px;background:linear-gradient(180deg,var(--crimson),var(--gold));transform:translateX(-50%)}
 
 .lead-bar{background:var(--card);border:1px solid var(--border);padding:16px 22px;margin-bottom:32px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
@@ -95,18 +96,21 @@ body::after{content:'';position:fixed;inset:0;background-image:linear-gradient(r
 .footer-diamond{color:var(--muted);font-size:8px}
 .footer-text{text-align:center;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;font-size:10px;color:var(--muted);letter-spacing:2px;text-transform:uppercase;margin-top:12px}
 .footer-text span{color:var(--gold);opacity:.6}
-
+  
+.theme-toggle{position:fixed;top:20px;right:20px;z-index:10;width:40px;height:40px;border-radius:50%;background:var(--card);border:1px solid var(--border);color:var(--text);cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;transition:all .2s;font-family:inherit}
+.theme-toggle:hover{border-color:var(--gold);transform:scale(1.05)}
 @media(max-width:640px){
   .showdown{grid-template-columns:1fr;gap:2px}
   .finalist-left{border:1px solid rgba(192,21,42,0.25)}
   .finalist-right{border:1px solid rgba(201,168,76,0.25)}
   .vs{height:50px}
-  .vs::before{top:50%;bottom:auto;left:0;right:0;width:100%;height:1px;transform:translateY(-50%);background:linear-gradient(90deg,var(--crimson),var(--gold))}
+  .vs::before{top:50%;bottom:auto;left:0;right:0;width:100%;height:1px;transform:translateY(-50%);background:var(--vs-bg)}
   .title{font-size:40px}
 }
 </style>
 </head>
 <body>
+<button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme" id="theme-toggle">🌙</button>
 <div class="app">
   <a class="back-link" href="index.html">← All Studios</a>
 
@@ -243,6 +247,26 @@ function render(){
   }
 }
 render();
+</script>
+<script>
+function toggleTheme(){
+  const r = document.documentElement;
+  const current = r.getAttribute('data-theme');
+  const next = current === 'light' ? 'dark' : 'light';
+  if(next === 'dark'){ r.removeAttribute('data-theme'); }
+  else { r.setAttribute('data-theme','light'); }
+  document.getElementById('theme-toggle').textContent = next === 'light' ? '☀️' : '🌙';
+  try { localStorage.setItem('mm-theme', next); } catch(e){}
+}
+(function(){
+  try {
+    const saved = localStorage.getItem('mm-theme');
+    if(saved === 'light'){
+      document.documentElement.setAttribute('data-theme','light');
+      document.getElementById('theme-toggle').textContent = '☀️';
+    }
+  } catch(e){}
+})();
 </script>
 </body>
 </html>
