@@ -219,7 +219,8 @@ function renderFinalist(team){
         : `<div class="film-earn earn-pending">${f.t ? 'Pending' : 'TBD'}</div>`}
     </div>`;
   }).join('');
-  return `<div class="finalist finalist-${team.side}">
+  return `<div class="finalist finalist-${team.side}" data-side="${team.side}">
+    <canvas class="confetti-canvas"></canvas>
     <div class="finalist-label">${team.side==='left'?'Finalist · Hollywood':'Finalist · Tinseltown'}</div>
     <div class="finalist-name">${team.name}</div>
     <div class="finalist-studio">${team.studio}</div>
@@ -268,6 +269,86 @@ function toggleTheme(){
       document.getElementById('theme-toggle').textContent = '☀️';
     }
   } catch(e){}
+})();
+</script>
+<script>
+(function(){
+  const PALETTES = {
+    left:  ['#C0152A', '#FF6B6B', '#7A0D1A', '#E85A5A', '#A01020'], // crimson family
+    right: ['#C9A84C', '#E8C97A', '#8B6F1F', '#F5D982', '#B8902E']  // gold family
+  };
+
+  document.querySelectorAll('.finalist').forEach(card => {
+    const canvas = card.querySelector('.confetti-canvas');
+    if(!canvas) return;
+    const ctx = canvas.getContext('2d');
+    const colors = PALETTES[card.dataset.side] || PALETTES.right;
+    let particles = [];
+    let rafId = null;
+    let running = false;
+
+    function resize(){
+      canvas.width = card.offsetWidth;
+      canvas.height = card.offsetHeight;
+    }
+    resize();
+    window.addEventListener('resize', resize);
+
+    function spawn(count){
+      const w = canvas.width;
+      for(let i=0; i<count; i++){
+        particles.push({
+          x: Math.random() * w,
+          y: -10 - Math.random() * 40,
+          vx: (Math.random() - 0.5) * 2,
+          vy: 1.5 + Math.random() * 2.5,
+          size: 4 + Math.random() * 5,
+          rot: Math.random() * Math.PI * 2,
+          vrot: (Math.random() - 0.5) * 0.3,
+          color: colors[Math.floor(Math.random() * colors.length)],
+          life: 1
+        });
+      }
+    }
+
+    function tick(){
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      particles = particles.filter(p => p.y < canvas.height + 20 && p.life > 0);
+      particles.forEach(p => {
+        p.x += p.vx;
+        p.y += p.vy;
+        p.vy += 0.05;
+        p.rot += p.vrot;
+        p.life -= 0.005;
+        ctx.save();
+        ctx.translate(p.x, p.y);
+        ctx.rotate(p.rot);
+        ctx.globalAlpha = Math.max(0, p.life);
+        ctx.fillStyle = p.color;
+        ctx.fillRect(-p.size/2, -p.size/4, p.size, p.size/2);
+        ctx.restore();
+      });
+      if(running || particles.length > 0){
+        rafId = requestAnimationFrame(tick);
+      } else {
+        rafId = null;
+      }
+    }
+
+    let spawnInterval = null;
+    card.addEventListener('mouseenter', () => {
+      running = true;
+      resize();
+      spawn(30);
+      if(!rafId) tick();
+      spawnInterval = setInterval(() => spawn(8), 150);
+    });
+    card.addEventListener('mouseleave', () => {
+      running = false;
+      clearInterval(spawnInterval);
+      spawnInterval = null;
+    });
+  });
 })();
 </script>
 </body>
