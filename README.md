@@ -15,6 +15,14 @@ Welcome to the **Movie Moguls**, a realm of whimsy, fun and ruthless competition
 - 🎬 **[Tinseltown Studio](https://gkacc-gif.github.io/movie-moguls/tinseltown_moguls.html)** — Reel Ones · Studio Cinemagda · Cash Me If You Can · The Devil Wears Victory
 - 🎥 **[Hollywood Movie Studio](https://gkacc-gif.github.io/movie-moguls/hollywood_moguls.html)** — Cinema Toast Crunch · Take 2 Studios · Butter Popcorn Prophets · Cinemaniacs
 
+## 👑 The Championship
+
+- **Runs:** October 30 – December 15, 2026
+- **Scoring:** Worldwide gross via [Box Office Mojo](https://www.boxofficemojo.com/year/world/)
+- **Roster:** Three movies per team
+- **The Teams:** Studio Cinemagda - Tinseltown Champion · Cinema Toast Crunch - Hollywood Champion
+- **Updates:** Weekly, usually Mondays 😉
+
 ## 📊 The Season
 
 - **Runs:** May 1 – September 30, 2026
