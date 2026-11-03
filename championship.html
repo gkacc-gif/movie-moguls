@@ -193,13 +193,21 @@ const CHAMP = [
     studio: "Tinseltown Studio",
     side: "right",
     films: [
-      { slot: "pick", t: "Hunger Games: Sunrise on the Reaping" },
-      { slot: "pick", t: "Cat in the Hat" },
-      { slot: "pick", t: "Focker in Law" }
+      { slot: "pick", t: "The Hunger Games: Sunrise on the Reaping" },
+      { slot: "pick", t: "The Cat in the Hat" },
+      { slot: "pick", t: "Focker-in-Law" }
     ]
   }
 ];
-
+const RD = {
+  "godzilla minus zero": "Nov 6",
+  "the cat in the hat": "Nov 6",
+  "ebenezer": "Nov 11",
+  "the hunger games: sunrise on the reaping": "Nov 20",
+  "focker-in-law": "Nov 24",
+  "hexed": "Nov 25"
+};
+  
 document.getElementById('last-updated').textContent = LAST_UPDATED;
 
 function earn(t){ return t ? (EARNINGS[t.toLowerCase().trim()] || 0) : 0; }
@@ -218,8 +226,8 @@ function renderFinalist(team){
       </div>
       ${e>0
         ? `<div class="film-earn earn-live">${fmt(e)}</div>`
-        : `<div class="film-earn earn-pending">${f.t ? 'Pending' : 'TBD'}</div>`}
-    </div>`;
+: `<div class="film-earn earn-pending">${f.t ? 'Opens ' + rd(f.t) : 'TBD'}</div>`}    
+</div>`;
   }).join('');
   return `<div class="finalist finalist-${team.side}" data-side="${team.side}">
     <canvas class="confetti-canvas"></canvas>
