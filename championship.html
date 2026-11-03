@@ -249,7 +249,7 @@ function render(){
   const a = total(CHAMP[0]), b = total(CHAMP[1]);
   const lead = document.getElementById('lead-bar');
   if(a===0 && b===0){
-    lead.innerHTML = `<span class="lead-text">Standings open when the first drafted film reports</span><span class="lead-amount tied">— awaiting draft —</span>`;
+    lead.innerHTML = `<span class="lead-text">Standings open when the first drafted film reports</span><span class="lead-amount tied">— awaiting movie releases —</span>`;
   } else if(a===b){
     lead.innerHTML = `<span class="lead-text">Dead heat</span><span class="lead-amount tied">${fmt(a)} apiece</span>`;
   } else {
