@@ -207,7 +207,7 @@ const RD = {
   "focker-in-law": "Nov 24",
   "hexed": "Nov 25"
 };
-  
+function rd(t){ return RD[t.toLowerCase().trim()] || "TBD"; }  
 document.getElementById('last-updated').textContent = LAST_UPDATED;
 
 function earn(t){ return t ? (EARNINGS[t.toLowerCase().trim()] || 0) : 0; }
