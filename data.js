@@ -49,7 +49,14 @@ const EARNINGS = {
   "evil dead burn":                      72373081,   // Same film — BOM lists without colon
   "hokum":                               25023390,   // Final: Sep 30
   "animal farm":                          6603826,   // Final: Sep 30
-  "power ballad":                         3338777    // Last seen: Jul 21 (off chart — carried forward)
+  "power ballad":                         3338777,    // Last seen: Jul 21 (off chart — carried forward)
+    // Championship round
+  "godzilla minus zero":                      0,
+  "the cat in the hat":                       0,
+  "ebenezer":                                 0,
+  "the hunger games: sunrise on the reaping": 0,
+  "focker-in-law":                            0,
+  "hexed":                                    0
 };
  
-const LAST_UPDATED = "Oct 1, 2026";
+const LAST_UPDATED = "Nov. 3, 2026";
