@@ -51,12 +51,12 @@ const EARNINGS = {
   "animal farm":                          6603826,   // Final: Sep 30
   "power ballad":                         3338777,    // Last seen: Jul 21 (off chart — carried forward)
     // Championship round
-  "godzilla minus zero":                      0,
-  "the cat in the hat":                       0,
+  "godzilla minus zero":                 31610000,   // Data as of Nov 9
+  "the cat in the hat":                  30500000,   // Data as of: Nov 9
   "ebenezer":                                 0,
   "the hunger games: sunrise on the reaping": 0,
   "focker-in-law":                            0,
   "hexed":                                    0
 };
  
-const LAST_UPDATED = "Nov. 3, 2026";
+const LAST_UPDATED = "Nov. 9, 2026";
